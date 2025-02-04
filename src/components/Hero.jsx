@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin, FaTwitter, FaArrowDown } from "react-icons/fa";
-import ME from "../assets/M.png"; // Ensure the path to your image is correct
+import MImage from "../assets/images/M.png"; // Correct path // Ensure the path to your image is correct
 
 const Hero = () => {
   // Animation variants for Framer Motion
@@ -45,7 +45,7 @@ const Hero = () => {
           className="w-48 h-48 md:w-64 md:h-64 mx-auto rounded-full overflow-hidden shadow-lg mb-8 md:mb-0 md:mr-8"
         >
           <img
-            src={ME} // Use the imported image
+            src={MImage} // Use the imported image
             alt="Profile"
             className="w-full h-full object-cover"
           />
