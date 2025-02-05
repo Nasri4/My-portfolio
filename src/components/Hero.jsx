@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin, FaTwitter, FaArrowDown } from "react-icons/fa";
-import MImage from "../assets/images/M.png"; // Ensure the path is correct
+import MImage from "../assets/images/m.png"; // Ensure the path is correct
 
 const Hero = () => {
   // Animation variants for Framer Motion

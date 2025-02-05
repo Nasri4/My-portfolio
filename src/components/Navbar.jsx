@@ -18,12 +18,7 @@ const Navbar = () => {
   }, []);
 
   // Toggle dark mode
-  const toggleDarkMode = () => {
-    const newDarkMode = !darkMode;
-    setDarkMode(newDarkMode);
-    localStorage.setItem("darkMode", newDarkMode);
-    document.documentElement.classList.toggle("dark");
-  };
+  
 
   // Toggle mobile menu
   const toggleMenu = () => {
@@ -135,12 +130,7 @@ const Navbar = () => {
           >
             Contact
           </a>
-          <button
-            onClick={toggleDarkMode}
-            className="p-2 bg-gray-200 dark:bg-gray-700 rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors"
-          >
-            {darkMode ? <FaSun className="text-yellow-500" /> : <FaMoon className="text-gray-800" />}
-          </button>
+         
         </div>
 
         {/* Mobile Menu Toggle Button */}
@@ -235,17 +225,7 @@ const Navbar = () => {
         >
           Contact
         </a>
-        <button
-          onClick={toggleDarkMode}
-          className="w-full py-2 text-left text-gray-800 dark:text-white hover:text-blue-500 transition-colors flex items-center"
-        >
-          {darkMode ? (
-            <FaSun className="text-yellow-500 mr-2" />
-          ) : (
-            <FaMoon className="text-gray-800 mr-2" />
-          )}
-          {darkMode ? "Light Mode" : "Dark Mode"}
-        </button>
+        
       </div>
     </nav>
   );
