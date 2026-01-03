@@ -42,12 +42,18 @@ const Hero = () => {
         {/* Profile Picture */}
         <motion.div
           variants={itemVariants}
-          className="w-48 h-48 md:w-64 md:h-64 mx-auto rounded-full overflow-hidden shadow-lg mb-8 md:mb-0 md:mr-8"
+          className="w-40 h-40 md:w-56 md:h-56 mx-auto rounded-full overflow-hidden shadow-lg mb-8 md:mb-0 md:mr-8"
         >
           <img
-            src={MImage} // Use the imported image
+            src={MImage} // Use the imported image - Consider using a higher resolution image (at least 512x512px) for better quality
             alt="Profile"
             className="w-full h-full object-cover"
+            style={{
+              imageRendering: 'auto',
+              WebkitImageRendering: 'auto',
+              MozImageRendering: 'auto',
+              msImageRendering: 'auto'
+            }}
           />
         </motion.div>
 
